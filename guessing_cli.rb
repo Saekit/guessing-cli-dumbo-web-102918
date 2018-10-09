@@ -7,7 +7,7 @@ def run_guessing_game
     computer_output = rand(1..6)
     if user_input == "exit"
       puts "Goodbye!"
-    elsif user_input == computer_output
+    elsif user_input == String(computer_output)
       puts "You guessed the correct number!"
     else
       puts "The computer guessed #{computer_output}."
